@@ -1,2 +1,1 @@
-# zohowavelogo
-wave css
+# Zogologo
