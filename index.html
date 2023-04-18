@@ -9,6 +9,7 @@
     <title>ZOHO</title>
 </head>
 <body class="flex justify-center items-center">
+
    <div class="letters-main-container  grid grid-cols-4">
    
     <div class="content1">
@@ -50,9 +51,8 @@
 }
 body{
     width: 100%;
-    min-height: 70vh;
     background-color: #000;
-    overflow: hidden;
+   
    
 }
 .letters-main-container{
@@ -60,10 +60,14 @@ width: 500px;
 }
 .content1,.content2,.content3,.content4{
     position: relative;
+    height: 100vh;
 }
 
 .content1 h2,.content2 h2,.content3 h2,.content4 h2{
     position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
     font-size: 8rem;
     font-weight: 800;
 }
@@ -114,10 +118,7 @@ width: 500px;
 }
 
 @media only screen and (min-width:0px) and (max-width:200px){
-    body{
-        width: 100%;
-        min-height: 100vh;
-    }
+    
     .letters-main-container{
         width: 100px;
         }
@@ -127,16 +128,23 @@ width: 500px;
     }
 }
 @media only screen and (min-width:201px) and (max-width:400px){
-    body{
-        width: 100%;
-        min-height: 90vh;
-    }
+  
     .letters-main-container{
-        width: 200px;
+        width: 250px;
         }
     .content1 h2,.content2 h2,.content3 h2,.content4 h2{
         font-size: 3rem;
     font-weight: 700;
     }
+}
+@media only screen and (min-width:401px) and (max-width:800px){
+  
+  .letters-main-container{
+      width: 300px;
+      }
+  .content1 h2,.content2 h2,.content3 h2,.content4 h2{
+      font-size: 5rem;
+  font-weight: 700;
+  }
 }
 </style>
