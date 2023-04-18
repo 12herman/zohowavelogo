@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    min-height: 70vh;
+    background-color: #000;
+    overflow: hidden;
+   
+}
+.letters-main-container{
+width: 500px;
+}
+.content1,.content2,.content3,.content4{
+    position: relative;
+}
+
+.content1 h2,.content2 h2,.content3 h2,.content4 h2{
+    position: absolute;
+    font-size: 8rem;
+    font-weight: 800;
+}
+
+.content1 h2,.content2 h2,.content3 h2,.content4 h2:nth-child(1){
+    color: transparent;
+}
+
+/* outline-stockes-colour */
+.content1 h2:nth-child(1){
+    -webkit-text-stroke: 1px #E34642;
+}
+.content2 h2:nth-child(1){
+    -webkit-text-stroke: 1px #00973C;
+}
+.content3 h2:nth-child(1){
+    -webkit-text-stroke: 1px #006BB3;
+}
+.content4 h2:nth-child(1){
+    -webkit-text-stroke: 1px #F7AA00;
+}
+
+/* wake-colour */
+.content1 h2:nth-child(2){
+    color: #E34642;
+    animation: animate 4s ease-in-out infinite;
+}
+.content2 h2:nth-child(2){
+    color: #00973C;
+    animation: animate 4s ease-in-out infinite;
+}
+.content3 h2:nth-child(2){
+    color: #006BB3;
+    animation: animate 4s ease-in-out infinite;
+}
+.content4 h2:nth-child(2){
+    color: #F7AA00;
+    animation: animate 4s ease-in-out infinite;
+}
+
+@keyframes animate {
+    0%,100%{
+        clip-path: polygon(0 31%, 13% 44%, 35% 53%, 56% 55%, 72% 56%, 84% 58%, 100% 63%, 99% 100%, 0 100%);
+    }
+    50%{
+        clip-path: polygon(0 45%, 18% 56%, 32% 56%, 52% 51%, 67% 42%, 85% 35%, 100% 31%, 99% 100%, 0 100%);
+    }
+}
+
+@media only screen and (min-width:0px) and (max-width:200px){
+    body{
+        width: 100%;
+        min-height: 100vh;
+    }
+    .letters-main-container{
+        width: 100px;
+        }
+    .content1 h2,.content2 h2,.content3 h2,.content4 h2{
+        font-size: 1rem;
+    font-weight: 500;
+    }
+}
+@media only screen and (min-width:201px) and (max-width:400px){
+    body{
+        width: 100%;
+        min-height: 100vh;
+    }
+    .letters-main-container{
+        width: 200px;
+        }
+    .content1 h2,.content2 h2,.content3 h2,.content4 h2{
+        font-size: 3rem;
+    font-weight: 700;
+    }
+}
